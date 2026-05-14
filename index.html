@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Love Story — Dudu❤️Fudu</title>
+  <meta name="description"
+    content="A beautiful love anniversary story — celebrating every moment, every memory, every heartbeat shared together." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Lato:wght@300;400;700&family=Dancing+Script:wght@400;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="extra.css" />
+  
+  <!-- Explicitly set favicon to override any cached logos from other projects -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>❤️</text></svg>">
+</head>
+
+<body>
+
+  <!-- Floating hearts canvas -->
+  <canvas id="heartsCanvas"></canvas>
+
+  <!-- Progress bar -->
+  <div class="progress-bar" id="progressBar"></div>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">❤️ Dufu Story</div>
+    <ul class="nav-links">
+      <li><a href="#hero" class="nav-link">Home</a></li>
+      <li><a href="#chapter-1" class="nav-link">How We Met</a></li>
+      <li><a href="#chapter-2" class="nav-link">Our Journey</a></li>
+      <li><a href="#chapter-3" class="nav-link">Under the Stars</a></li>
+      <li><a href="#chapter-4" class="nav-link">Anniversary</a></li>
+      <li><a href="#gallery" class="nav-link">Gallery</a></li>
+      <li><a href="#letter" class="nav-link">Love Letter</a></li>
+    </ul>
+    <div class="nav-hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#hero" class="mobile-nav-link">🏠 Home</a></li>
+      <li><a href="#chapter-1" class="mobile-nav-link">☕ How We Met</a></li>
+      <li><a href="#chapter-2" class="mobile-nav-link">🌸 Our Journey</a></li>
+      <li><a href="#chapter-3" class="mobile-nav-link">🌟 Under the Stars</a></li>
+      <li><a href="#chapter-4" class="mobile-nav-link">🎉 Anniversary</a></li>
+      <li><a href="#gallery" class="mobile-nav-link">🖼️ Gallery</a></li>
+      <li><a href="#letter" class="mobile-nav-link">💌 Love Letter</a></li>
+    </ul>
+  </div>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-image">
+      <picture>
+        <source media="(min-width: 768px)" srcset="images/hero_couple.jpg" />
+        <source media="(max-width: 767px)" srcset="images/hero_couple.jpg" />
+        <img src="images/hero_couple.jpg" alt="Our Love Story Hero" />
+      </picture>
+      <div class="hero-overlay"></div>
+    </div>
+
+    <!-- Animated particles -->
+    <div class="particles" id="particles"></div>
+
+    <div class="hero-content">
+      <p class="hero-pre-title reveal-up">✦ A Love Story ✦</p>
+      <h1 class="hero-title reveal-up delay-1">
+        <span class="line">Forever</span>
+        <span class="line italic">Yours</span>
+      </h1>
+      <p class="hero-subtitle reveal-up delay-2">
+        Every moment with you is a chapter worth writing,<br />
+        every memory — a treasure worth keeping forever.
+      </p>
+      <div class="hero-date reveal-up delay-3">
+        <button class="date-badge" id="anniversaryBtn">💕 Happy Anniversary 💕</button>
+      </div>
+      <a href="#chapter-1" class="hero-cta reveal-up delay-4">
+        <span>Begin Our Story</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 5v14M5 12l7 7 7-7" />
+        </svg>
+      </a>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="scroll-indicator">
+      <div class="scroll-dot"></div>
+    </div>
+  </section>
+
+  <!-- ===== TIMELINE / CHAPTERS ===== -->
+  <main class="story-main">
+
+    <!-- ===== CHAPTER 1: HOW WE MET ===== -->
+    <section class="chapter" id="chapter-1" data-chapter="1">
+      <div class="chapter-bg chapter-bg-warm"></div>
+
+      <div class="chapter-inner">
+        <div class="chapter-label reveal-fade">Chapter One</div>
+
+        <div class="chapter-layout layout-image-right">
+          <div class="chapter-text reveal-left">
+            <div class="chapter-icon">☕</div>
+            <h2 class="chapter-title">The Day We Met</h2>
+            <div class="chapter-date-tag">Once upon a time…</div>
+            <p class="chapter-body">
+              It started with a glance across in group — a heartbeat that skipped,
+              a smile that lingered just a second too long. When you took my chola as like you own this.
+            </p>
+            <p class="chapter-body">
+              That first hello felt like coming home. Two strangers, one moment,
+              and suddenly the universe made perfect sense. I didn't know it then,
+              but that was the beginning of everything beautiful.
+            </p>
+            <div class="chapter-quote">
+              <blockquote>"You were the missing piece I didn't know I was looking for."</blockquote>
+            </div>
+          </div>
+
+          <div class="chapter-image reveal-right">
+            <div class="image-frame">
+              <img src="images/first_meet.png" alt="The day we first met" loading="lazy" />
+              <div class="image-caption">☕ That magical first meeting</div>
+            </div>
+            <div class="floating-badge badge-1">💛 Day 1</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== DIVIDER ===== -->
+    <div class="chapter-divider">
+      <div class="divider-line"></div>
+      <div class="divider-heart">❤️</div>
+      <div class="divider-line"></div>
+    </div>
+
+    <!-- ===== CHAPTER 2: OUR ADVENTURES ===== -->
+    <section class="chapter" id="chapter-2" data-chapter="2">
+      <div class="chapter-bg chapter-bg-green"></div>
+
+      <div class="chapter-inner">
+        <div class="chapter-label reveal-fade">Chapter Two</div>
+
+        <div class="chapter-layout layout-image-left">
+          <div class="chapter-image reveal-left">
+            <div class="image-frame">
+              <img src="images/adventure_together.png" alt="Our adventures together" loading="lazy" />
+              <div class="image-caption">🌸 Wandering together</div>
+            </div>
+            <div class="floating-badge badge-2">🌼 Always Together</div>
+          </div>
+
+          <div class="chapter-text reveal-right">
+            <div class="chapter-icon">🌸</div>
+            <h2 class="chapter-title">Every Adventure, Together</h2>
+            <div class="chapter-date-tag">Our favorite memories…</div>
+            <p class="chapter-body">
+              With your hand in mine, every road became an adventure, every
+              ordinary day became extraordinary. We chased sunsets, laughed
+              at nothing, and found beauty in every corner of the world.
+            </p>
+            <p class="chapter-body">
+              From lazy mornings to impromptu midnight drives, you turned
+              the simplest moments into the most cherished memories. With you,
+              even getting lost felt like the right direction.
+            </p>
+
+            <div class="memories-grid">
+              <div class="memory-card">🌅 Sunset Chasing</div>
+              <div class="memory-card">🎵 Travelling together</div>
+              <div class="memory-card">🍕 Midnight Snacks</div>
+              <div class="memory-card">🏔️ Little Adventures</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PARALLAX BANNER ===== -->
+    <div class="parallax-banner" id="parallaxBanner">
+      <div class="parallax-bg"></div>
+      <div class="parallax-content">
+        <p class="parallax-text">"In all the world, there is no heart for me like yours."</p>
+
+      </div>
+    </div>
+
+    <!-- ===== CHAPTER 3: STARRY NIGHTS ===== -->
+    <section class="chapter" id="chapter-3" data-chapter="3">
+      <div class="chapter-bg chapter-bg-night"></div>
+
+      <div class="chapter-inner">
+        <div class="chapter-label reveal-fade">Chapter Three</div>
+
+        <div class="chapter-layout layout-image-right">
+          <div class="chapter-text reveal-left">
+            <div class="chapter-icon">🌟</div>
+            <h2 class="chapter-title">Under the Stars</h2>
+            <div class="chapter-date-tag">Our quiet magic…</div>
+            <p class="chapter-body">
+              Under a canopy of a million stars, I realized that every constellation
+              was just the universe's way of drawing a map back to you. You are
+              my north star — constant, radiant, and always guiding me home.
+            </p>
+            <p class="chapter-body">
+              In those quiet moments beneath the infinite sky, I whispered my
+              deepest wishes into the night. Every single one of them was you.
+              It always has been, and it always will be.
+            </p>
+            <div class="chapter-quote night-quote">
+              <blockquote>"I love you to the moon and back, and then some more."</blockquote>
+            </div>
+          </div>
+
+          <div class="chapter-image reveal-right">
+            <div class="image-frame night-frame">
+              <img src="images/starry_night.png" alt="A starry night together" loading="lazy" />
+              <div class="image-caption">🌌 Our starry nights</div>
+            </div>
+            <div class="floating-badge badge-3">⭐ Infinite Love</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== DIVIDER ===== -->
+    <div class="chapter-divider">
+      <div class="divider-line"></div>
+      <div class="divider-heart">💫</div>
+      <div class="divider-line"></div>
+    </div>
+
+    <!-- ===== CHAPTER 4: ANNIVERSARY ===== -->
+    <section class="chapter" id="chapter-4" data-chapter="4">
+      <div class="chapter-bg chapter-bg-rose"></div>
+
+      <div class="chapter-inner">
+        <div class="chapter-label reveal-fade">Chapter Four</div>
+
+        <div class="chapter-layout layout-image-left">
+          <div class="chapter-image reveal-left">
+            <div class="image-frame">
+              <img src="images/anniversary_celebration.png" alt="Anniversary celebration" loading="lazy" />
+              <div class="image-caption">🎉 Celebrating us!</div>
+            </div>
+            <div class="floating-badge badge-4">🥂 Cheers to Us!</div>
+          </div>
+
+          <div class="chapter-text reveal-right">
+            <div class="chapter-icon">🎉</div>
+            <h2 class="chapter-title">Happy Anniversary</h2>
+            <div class="chapter-date-tag">Today & Always…</div>
+            <p class="chapter-body">
+              Another year of laughing together, growing together, and loving
+              each other more deeply with every single day. You have become
+              my greatest adventure and my safest haven all at once.
+            </p>
+            <p class="chapter-body">
+              Here's to every year that has been, and every beautiful year
+              yet to come. To more sunsets, more stars, more memories —
+              always and forever, together.
+            </p>
+
+            <div class="anniversary-counter">
+              <div class="counter-item">
+                <span class="counter-number" data-target="1095">0</span>
+                <span class="counter-label">Days Together</span>
+              </div>
+              <div class="counter-item">
+                <span class="counter-number" data-target="26280">0</span>
+                <span class="counter-label">Hours of Love</span>
+              </div>
+              <div class="counter-item">
+                <span class="counter-number" data-target="∞" data-infinity="true">∞</span>
+                <span class="counter-label">Memories Made</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== GALLERY SECTION ===== -->
+    <section class="gallery-section" id="gallery">
+      <div class="gallery-bg"></div>
+      <div class="gallery-inner">
+        <div class="gallery-header reveal-up">
+          <p class="gallery-pre">✦ Our Moments ✦</p>
+          <h2 class="gallery-title">A Lifetime of Memories</h2>
+          <p class="gallery-sub">Every photo a heartbeat. Every memory, forever.</p>
+        </div>
+
+        <div class="gallery-grid">
+
+          <div class="gallery-card reveal-up" style="--delay:0s">
+            <div class="gallery-card-img">
+              <img src="images/IMG20240610111531.jpg" alt="Sharing ice cream together" loading="lazy" />
+              <div class="gallery-card-overlay">
+                <span class="gallery-card-emoji">🍦</span>
+                <p class="gallery-card-caption">prem mandir</p>
+              </div>
+            </div>
+            <div class="gallery-card-info">
+              <h3>prem mandir</h3>
+              <p>in vrindavan</p>
+            </div>
+          </div>
+
+          <div class="gallery-card reveal-up" style="--delay:0.1s">
+            <div class="gallery-card-img">
+              <img src="images/IMG-20240625-WA0003.jpg" alt="Watching the sunset together" loading="lazy" />
+              <div class="gallery-card-overlay">
+                <span class="gallery-card-emoji">🌅</span>
+                <p class="gallery-card-caption">Fresher Party</p>
+              </div>
+            </div>
+            <div class="gallery-card-info">
+              <h3>Fresher Party</h3>
+              <p>in NIU</p>
+            </div>
+          </div>
+
+          <div class="gallery-card reveal-up" style="--delay:0.2s">
+            <div class="gallery-card-img">
+              <img src="images/Snapchat-1994583831.jpg" alt="Dancing in the garden" loading="lazy" />
+              <div class="gallery-card-overlay">
+                <span class="gallery-card-emoji">😘</span>
+                <p class="gallery-card-caption">Free Time</p>
+              </div>
+            </div>
+            <div class="gallery-card-info">
+              <h3>Masti Time</h3>
+              <p>We had a lot of fun in cllg free time.</p>
+            </div>
+          </div>
+
+          <div class="gallery-card reveal-up" style="--delay:0.3s">
+            <div class="gallery-card-img">
+              <img src="images/IMG20240606162011.jpg" alt="Cooking together" loading="lazy" />
+              <div class="gallery-card-overlay">
+                <span class="gallery-card-emoji">🍳</span>
+                <p class="gallery-card-caption">Signing off</p>
+              </div>
+            </div>
+            <div class="gallery-card-info">
+              <h3>Go Back Time</h3>
+              <p>Signing off from clg</p>
+            </div>
+          </div>
+
+          <div class="gallery-card reveal-up" style="--delay:0.4s">
+            <div class="gallery-card-img">
+              <img src="images/Snapchat-250552442.jpg" alt="Boat ride together" loading="lazy" />
+              <div class="gallery-card-overlay">
+                <span class="gallery-card-emoji">😘</span>
+                <p class="gallery-card-caption">Bunk Time</p>
+              </div>
+            </div>
+            <div class="gallery-card-info">
+              <h3>Bunk Time</h3>
+              <p>Calm, peaceful, and completely ours.</p>
+            </div>
+          </div>
+
+          <div class="gallery-card reveal-up" style="--delay:0.5s">
+            <div class="gallery-card-img">
+              <img src="images/IMG-20240625-WA0004.jpg" alt="Rooftop night together" loading="lazy" />
+              <div class="gallery-card-overlay">
+                <span class="gallery-card-emoji">✨</span>
+                <p class="gallery-card-caption">Small Break</p>
+              </div>
+            </div>
+            <div class="gallery-card-info">
+              <h3>Small Break</h3>
+              <p>Small Break in clg</p>
+            </div>
+          </div>
+
+          <div class="gallery-card reveal-up" style="--delay:0.6s">
+            <div class="gallery-card-img">
+              <img src="images/IMG20240810220924.jpg" alt="Sunrise beach walk" loading="lazy" />
+              <div class="gallery-card-overlay">
+                <span class="gallery-card-emoji">☕</span>
+                <p class="gallery-card-caption">Cafe Party</p>
+              </div>
+            </div>
+            <div class="gallery-card-info">
+              <h3>Cafe Party</h3>
+              <p>Party with friends</p>
+            </div>
+          </div>
+
+          <div class="gallery-card reveal-up" style="--delay:0.7s">
+            <div class="gallery-card-img">
+              <img src="images/FullSizeRender_(11).jpg" alt="Autumn park bench" loading="lazy" />
+              <div class="gallery-card-overlay">
+                <span class="gallery-card-emoji">🍂</span>
+                <p class="gallery-card-caption">Adventure</p>
+              </div>
+            </div>
+            <div class="gallery-card-info">
+              <h3>Adventure Time</h3>
+              <p>When end of every sem we plan a trip.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== LOVE LETTER ===== -->
+    <section class="love-letter-section" id="letter">
+      <div class="letter-bg"></div>
+      <div class="letter-container">
+        <div class="letter-envelope reveal-up">
+          <div class="letter-seal">💌</div>
+        </div>
+
+        <div class="letter-content reveal-up delay-1">
+          <div class="letter-header">
+            <p class="letter-pre">A Letter From My Heart</p>
+            <h2 class="letter-title">To My Forever Love</h2>
+          </div>
+
+          <div class="letter-body">
+            <p>My Dearest Fudu,</p>
+            <p>
+              Before you, I never knew that someone could feel like home —
+              like the one place in the world where everything finally made sense.
+              You walked into my life and quietly became the best part of it.
+            </p>
+            <p>
+              You are the reason I believe in magic — in the kind that doesn't
+              need wands or spells, just two hearts beating in perfect harmony.
+              You are my magic, my miracle, my most beautiful reality.
+            </p>
+            <p>
+              Thank you for every hug that felt like home, every laugh that
+              felt like music, every moment that reminded me that life —
+              <em>this life, our life</em> — is breathtakingly beautiful.
+            </p>
+            <p>
+              Happy Anniversary, my love. Here's to forever not being long enough.
+            </p>
+            <p class="letter-sign">With all my love, always,</p>
+            <p class="letter-signature">Forever Yours 💕</p>
+          </div>
+        </div>
+
+        <!-- Floating hearts around the letter -->
+        <div class="letter-hearts">
+          <span class="lh lh-1">💕</span>
+          <span class="lh lh-2">❤️</span>
+          <span class="lh lh-3">💗</span>
+          <span class="lh lh-4">💖</span>
+          <span class="lh lh-5">💝</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="site-footer">
+      <div class="footer-content">
+        <div class="footer-heart">❤️</div>
+        <p class="footer-text">Made with infinite love &amp; countless heartbeats</p>
+        <p class="footer-sub">Our story will never end ∞</p>
+      </div>
+    </footer>
+
+  </main>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M12 19V5M5 12l7-7 7 7" />
+    </svg>
+  </button>
+
+  <!-- Confetti Library -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
